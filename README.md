@@ -12,13 +12,9 @@ Pagemarkdown introduces the `.pmd` file format, which extends markdown to allow 
   # Testing
   §test/testing2
   # Testing 2
-  ```
-  §test/testing3
-  # Testing 3
-  ```
 ```
 
-This would produce two files in the new local directory `test`, `testing.html` containing `# Testing` and `testing2.html` containing `# Testing 2`. PMD respects code blocks and will not create `testing3.html`. Notice that in these cases there is no extension for these file paths - this is because you can specify whether the output will be `.md` or `.html` in the command line.
+This would produce two files in the new local directory `test`, `testing.html` containing `# Testing` and `testing2.html` containing `# Testing 2`. PMD respects code blocks and will not create new files if the `§` symbol is within one. Notice that in these cases there is no extension for these file paths - this is because you can specify whether the output will be `.md` or `.html` in the command line.
 
 There is also a mode which allows you to specify the page title:
 
